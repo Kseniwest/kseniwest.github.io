@@ -1,9 +1,25 @@
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    
+}
 
 @media (max-width: 991px) {
+    .feed-form {
+        margin-left: 20px;
+    }
+    .consultation {
+        &__descr{
+            margin-left: 20px; 
+        }
+        .title {
+            &_left {
+                margin-left: 20px;
+                font-size: 30px;
+            }
+        }
+    }
     .header {
         &__logo {
-            padding-left: 10px;
+            padding-left: 20px;
             width: 200px;
         }
         &__official {
@@ -117,9 +133,25 @@
             margin-right: 10px;
         }
     }
+    .consultation {
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .title {
+            &_left {
+                text-align: center;
+            }
+        }
+        &__descr {
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width: 575px) {
+
     .header {
         flex-direction: column;
 
@@ -200,5 +232,25 @@
             font-size: 20px;
         }
     }
-    
+    .consultation {
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .title {
+            &_left {
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+        &__descr {
+            font-size: 12px;
+            font-weight: 300;
+        }
+        .feed-form {
+            width: 280px;
+            margin-left: 0;
+        }
+    }
 }
