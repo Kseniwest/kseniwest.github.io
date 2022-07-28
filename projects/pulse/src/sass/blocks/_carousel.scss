@@ -1,3 +1,48 @@
 .carousel {
     padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+    .slick-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #ffffff;
+    }
+    .slick-next {
+        border: none;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -66px;
+    }
+
+    .slick-dots {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        list-style-type: none;
+        button {
+            display: none;
+        }
+        li {
+            margin: 0 32px;
+            &::before {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background-color: $main-color;
+            }
+        }
+        
+    }
 }
