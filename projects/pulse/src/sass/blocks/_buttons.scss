@@ -9,16 +9,26 @@
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
+
     &_main {
         margin-top: 67px;
         width: 303px;
         height: 54px;
         font-size: 16px;
     }
+
     &_submit {
         width: 100%;
         background: #C70101;
         height: 58px;
         font-size: 16px;
+    }
+
+    &_mini {
+        width: 135px;
+        height: 44px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
     }
 }
