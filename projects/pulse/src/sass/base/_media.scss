@@ -95,11 +95,22 @@
         &__content {
             justify-content: center;
             &:last-child {
-                justify-content:  center;}
+                justify-content:  center;
+            }
         }
         &-item {
             width: 350px;
-            margin-right: 0;
+            margin-right: 20px;
+        }
+    }
+    .feed {
+        &__icon {
+            width: 139px;
+            height: 139px;
+            margin-left: 20px;
+        }
+        &__text {
+            margin-right: 20px;
         }
     }
 }
@@ -235,6 +246,16 @@
         }
         &-item {
             width: 350px;
+        }
+    }
+    .feed {
+        &__icon {
+            width: 139px;
+            height: 139px;
+            margin-left: 20px;
+        }
+        &__text {
+            margin-right: 20px;
         }
     }
 }
@@ -402,6 +423,36 @@
         }
         &__content {
             justify-content: center;
+        }
+        &-item {
+            width: 90%;
+            margin: 10px 0;
+        }
+    }
+    .feed {
+        .title {
+            font-size: 20px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            margin-bottom: 60px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 20px;
+        }
+        &__icon {
+            width: 139px;
+            height: 139px;
+            margin-right: 0px;
+        }
+        &__descr, &__subtitle {
+            font-size: 14px;
         }
     }
 }
