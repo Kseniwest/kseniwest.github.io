@@ -9,12 +9,22 @@
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+        border: none;
+    }
 
     &_main {
         margin-top: 67px;
         width: 303px;
         height: 54px;
         font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
     }
 
     &_submit {
@@ -22,6 +32,11 @@
         background: #C70101;
         height: 58px;
         font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
     }
 
     &_mini {
@@ -30,5 +45,10 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
     }
 }
