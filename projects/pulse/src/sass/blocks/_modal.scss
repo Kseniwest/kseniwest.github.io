@@ -23,6 +23,7 @@
         color: $main-color;
         font-size: 40px;
         line-height: 21px;
+        cursor: pointer;
     }
 
     &__subtitle {
@@ -41,4 +42,11 @@
         line-height: 14px;
         margin-bottom: 26px;
     }
+    &_mini {
+        min-height: 143px;
+    }
+}
+
+#consultation, #order, #thanks {
+    display: none;
 }
