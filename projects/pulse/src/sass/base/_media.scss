@@ -120,6 +120,18 @@
             margin-right: 20px;
         }
     }
+    .modal {
+        margin-top: 16px;
+        width: 380px;
+        min-height: 300px;
+        .feed-form_mt25 {
+            width: 300px;
+            margin: 0;
+            button {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -291,6 +303,18 @@
             img {
                 width: 40px;
                 height: 40px;
+            }
+        }
+    }
+    .modal {
+        margin-top: 16px;
+        width: 350px;
+        min-height: 300px;
+        .feed-form_mt25 {
+            width: 280px;
+            margin: 0;
+            button {
+                font-size: 14px;
             }
         }
     }
@@ -526,4 +550,27 @@
             }
         }
     }
+    
+    .modal {
+        margin-top: 16px;
+        width: 280px;
+        min-height: 300px;
+        .feed-form_mt25 {
+            width: 200px;
+            margin: 0;
+            button {
+                font-size: 12px;
+            }
+        }
+        &__close {
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            color: $main-color;
+            font-size: 40px;
+            line-height: 21px;
+            cursor: pointer;
+        }
+    }
+    
 }
