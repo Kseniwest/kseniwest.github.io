@@ -15,6 +15,7 @@
     width: 380px;
     min-height: 400px;
     padding: 38px 40px 40px 40px;
+
     &__close {
         position: absolute;
         right: -40px;
@@ -22,5 +23,22 @@
         color: $main-color;
         font-size: 40px;
         line-height: 21px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: #0D0D0D;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    &__descr {
+        text-align: center;
+        color: #0D0D0D;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 26px;
     }
 }
