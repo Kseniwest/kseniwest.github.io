@@ -8,19 +8,27 @@
     top: 226px;
     left: 61px;
     align-items: center;
+
     &__divider {
-        content:'';
+        content: '';
         height: 70px;
         background-color: #000000;
         width: 2px;
     }
+
     &__text {
         height: 150px;
         width: 25px;
         span {
-            transform: rotate(-90deg) translate(-30%,-260%);
+            transform: rotate(-90deg) translate(-30%, -260%);
             display: block;
             width: 150px;
+        }
+    }
+
+    &__link {
+        &:hover {
+            transform: scale(1.25);
         }
     }
 }
