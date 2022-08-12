@@ -3,15 +3,18 @@
     position: relative;
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 205px;
+
     &__title {
         margin-top: 10px;
     }
+
     &__subtitle {
         @include before_circle;
         position: relative;
         padding-left: 10px;
         z-index: 2;
     }
+
     &__btns {
         margin-top: 35px;
         display: flex;
@@ -19,11 +22,34 @@
         align-items: center;
         justify-content: space-between;
     }
+
     &__link {
         color: #000000;
-        &:hover{
+
+        &:hover {
             color: beige;
             text-decoration: none;
         }
+    }
+}
+
+.hamburger {
+    height: 21px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        background-color: #000000;
+        width: 30px;
+        height: 3px;
+        display: block;
+    }
+    span.long {
+        width: 36px;
     }
 }

@@ -1,0 +1,97 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+        transition: all 0.6s;
+    }
+
+    &__block {
+        position: relative;
+        width: 345px;
+        height: 100%;
+        background: rgba(240, 239, 237);
+        padding: 140px 0 0 40px;
+        z-index: 10;
+        transition: all 0.6s;
+    }
+
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        transition: all 0.6s;
+    }
+
+    &__list {
+        list-style-type: none;
+        padding-left: 35px;
+    }
+
+    &__link {
+        position: relative;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 36px;
+        margin-bottom: 20px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000000;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.15s;
+
+            &:before {
+                background-color: #000000;
+            }
+        }
+    }
+
+    &__social {
+        width: 90px;
+        position: absolute;
+        display: flex;
+        bottom: 50px;
+        justify-content: space-between;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__overlay {
+        width: 100%;
+        background-color: #000000;
+        opacity: 0.70;
+        top: 0;
+        position: fixed;
+        left: 0;
+        height: 100%;
+        z-index: 9;
+    }
+}
