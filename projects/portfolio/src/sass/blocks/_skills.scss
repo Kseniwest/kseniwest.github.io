@@ -18,6 +18,7 @@
     &__item {
         padding: 30px 30px 25px 30px;
         border: 1px solid #000000;
+        background-color: rgba(239,236,231, 0.45);
         .title {
             margin-top: 20px;
             margin-bottom: 0;
@@ -33,6 +34,19 @@
             display: flex;
             align-items: center;
             min-height: 65px;
+        }
+    }
+    &__ratings {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70p);
+        gap: 45px;
+        &-item {
+            display: grid;
+            grid-template: minmax(21px, auto) 14px / 200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
         }
     }
 }
