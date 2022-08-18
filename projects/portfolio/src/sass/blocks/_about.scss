@@ -1,7 +1,8 @@
 .about {
     margin: 60px;
-    background: rgba(248, 246, 243, 0.45);
+    background: rgba(140,166,185, 0.05);
     padding: 20px;
+    border-radius: 50px;
     &__wrapper {
         display: grid;
         grid-template-columns: minmax(auto, 400) minmax(auto, 670);
@@ -23,7 +24,7 @@
             height: 36px;
             width: 36px;
             border-radius: 100%;
-            background:  #c6c5c0;
+            background:  #bad4d1;
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
             z-index: -1;
             top: -25%;
