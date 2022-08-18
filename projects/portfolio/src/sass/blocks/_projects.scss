@@ -1,0 +1,17 @@
+.projects {
+    position: relative;
+    &__title {
+        text-align: center;
+    }
+    .divider {
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(auto, 280px));
+        grid-template-rows: repeat(2, minmax(auto, 280px));
+        gap: 7px;
+    }
+}
