@@ -11,12 +11,25 @@
     .container {
         max-width: 720px;
     }
-    .promo {
-        &__title {
-            font-size: 36px;
+    .about {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: minmax(auto, 300) minmax(auto, 670);
+            grid-template-rows: minmax(200, auto) minmax(255, auto);
+            gap: 40px;
+        }
+        &__photo {
+            margin: 20px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 200px;
+            height: 200px;
+            img {
+                border-radius: 100%;
+                width: 100%;
+            }
         }
     }
-    
 }
 
 @media (max-width: 768px ) {
@@ -25,12 +38,35 @@
     }
     .title {
         &_fz48 {
-            font-size: 28px;
+            font-size: 32px;
+        }
+        &_fz36 {
+            font-size: 26px;
         }
     }
     .promo {
         &__title {
             line-height: 39px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+        }
+        &__skills {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            &-text {
+                margin-left: -40px;
+            }
+        }
+        &__photo {
+            margin: 20px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            margin: 0 auto;
         }
     }
 }
@@ -40,12 +76,19 @@
         width: 100%;
         padding: 0 10px;
     }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+        }
+        &_fz36 {
+            font-size: 24px;
+        }
+    }
     .promo {
         &__wrapper {
             max-width: 300px;
         }
         &__title {
-            font-size: 26px;
             padding-left: 20px;
             line-height: 39px;
         }
@@ -54,6 +97,28 @@
         &__block {
             width: 250px;
             padding-left: 20px;
+        }
+    }
+    .about {
+        margin: 0;
+        border-radius: 0;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+        }
+        &__skills {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            &-text {
+                margin-left: -40px;
+            }
+        }
+        &__photo {
+            margin: 20px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            margin: 0 auto;
         }
     }
 }
