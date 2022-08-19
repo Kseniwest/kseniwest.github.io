@@ -43,6 +43,7 @@
                 img {
                     transform: scale(1.5);
                     transition: all .25s;
+                    object-fit: cover;
                 }
             }
         }

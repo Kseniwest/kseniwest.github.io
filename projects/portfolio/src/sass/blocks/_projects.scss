@@ -16,6 +16,7 @@
         position: relative;
         img {
             border-radius: 6px;
+            object-fit: cover;
         }
         div {
             color: white;
@@ -50,7 +51,7 @@
 
         .horizonal {
             grid-column: 2/4;
-            grid-column: 2/3;
+            grid-row: 2/3;
         }
     }
 }
