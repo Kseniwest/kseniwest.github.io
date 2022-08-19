@@ -39,10 +39,10 @@
     &__wrapper {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(4, 280px);
-        grid-template-rows: repeat(2, 280px);
+        grid-template-columns: repeat(4, minmax(auto, 280px));
+        grid-template-rows: repeat(2, minmax(auto, 280px));
         gap: 7px;
-        grid-auto-rows: 280px;
+        grid-auto-rows: minmax(auto, 280px);
 
         .vertical {
             grid-row: 1/3;
