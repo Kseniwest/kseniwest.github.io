@@ -1,6 +1,3 @@
-### My CV:
-[Kseniia Poliakova](https://kseniwest.github.io/projects/portfolio/dist/) 
-
 ### My projects:
 
 1. [Pulse](https://kseniwest.github.io/projects/pulse/src/)
